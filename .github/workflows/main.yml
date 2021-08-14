@@ -3,15 +3,15 @@ name: test_keybot
 
 # 発火タイミング
 on:
- push:
-#  schedule:
-#    - cron: '5 10 * * 0'
-#    - cron: '5 13 * * MON-FRI'
-#    - cron: '5 10 * * 6'
+# push:
+  schedule:
+    - cron: '5 10 * * 0'
+    - cron: '5 13 * * MON-FRI'
+    - cron: '5 10 * * 6'
 
 jobs:
   build:
-    # Ubuntuの最新版環境内で処理
+    # MacOS BigSurの最新版環境内で処理
     runs-on: macos-11
     
     # 実行する処理＆コマンド指定
