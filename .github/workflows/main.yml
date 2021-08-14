@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     # MacOS BigSurの最新版環境内で処理
-    runs-on: macos-11
+    runs-on: macos-latest
     
     # 実行する処理＆コマンド指定
     steps:
