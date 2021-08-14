@@ -22,15 +22,15 @@ jobs:
        with:
         python-version: 3.9
      - name: Install dependencies
-       run: 
-        # pip更新
-        python -m pip install --upgrade pip
-        # 必要なパッケージインストール
-        pip install line-bot-sdk
-     - name: run script
-       env:
+       run: |
+         # pip更新
+         python -m pip install --upgrade pip
+         # 必要なパッケージインストール
+         pip install line-bot-sdk
+     - name: Run script
+       env: 
         CHANNEL_ACCESS_TOKEN: "YOUR_CHANNEL_ACCESS_TOKEN"
         USER_ID: "YOUR_USER_ID"
-       run:
+       run: |
         # main.py実行
         python main_01.py
